@@ -1,0 +1,5 @@
+.blacknav { background-color: #000; color: #fff;padding:5px}
+.list { border-bottom: 1px solid #ccc; padding: 5px; 
+display: flex; align-items: center; justify-content: space-between; width: 400px;}
+.modal { border:1px solid #ccc; padding:5px; box-shadow: 0 5px 5px rgba(0,0,0,0.15);width:300px}
+.study { margin:0 auto; display: flex; flex-direction: column; width:400px}

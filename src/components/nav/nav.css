@@ -1,0 +1,6 @@
+.nav-container { background: rgba(0,0,0,0.3); width: 350px; 
+    padding: 0.7rem 1.7rem; z-index: 2; position: fixed; left: 50%;
+    transform: translateX(-50%); display: flex; gap: 0.8rem; border-radius: 3rem;
+    backdrop-filter: blur(15px);bottom:3rem }
+.nav-container a { background: transparent; padding: 0.9rem; border-radius: 50%;}
+.nav-container a.active { color: var(--color-dark); background-color: var(--color-primary);}
