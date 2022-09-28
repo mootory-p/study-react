@@ -1,0 +1,5 @@
+.contact-container { display: grid; grid-template-columns: 1fr 1fr 1fr; gap:0.8rem; max-width: 1000px; 
+margin-bottom: 5rem;}
+.img-card { background-color: var(--color-primary2);border-radius: 6px; text-align: center; }
+.img-card img { height: 250px; border-radius: 6px; }
+.img-card h5 { padding: 12px; }
