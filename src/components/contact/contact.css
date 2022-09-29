@@ -1,5 +1,19 @@
-.contact-container { display: grid; grid-template-columns: 1fr 1fr 1fr; gap:0.8rem; max-width: 1000px; 
+ .contact-container { 
+	/*display: grid; grid-template-columns: 1fr 1fr 1fr; gap:0.8rem; */
+	 max-width: 1000px; 
 margin-bottom: 5rem;}
 .img-card { background-color: var(--color-primary2);border-radius: 6px; text-align: center; }
 .img-card img { height: 250px; border-radius: 6px; }
 .img-card h5 { padding: 12px; }
+.contact-container h2, .contact-container h5 { text-align: center; margin-bottom: 1rem;}
+.swiper-wrapper {padding-bottom:4rem; }
+
+
+.gridtem { display: grid; grid-template-columns: 30% 60%; gap:10%; max-width: 1000px;
+margin-top:4rem; margin-bottom:4rem;}
+.gridtem .left { background-color: var(--color-primary);}
+.gridtem form { 
+display: flex; flex-direction: column; gap: 1.2rem;}
+.gridtem form textarea { resize: none;}
+.gridtem form input, .gridtem form textarea { width:100%; border:1px solid var(--color-light4); 
+background: transparent;}

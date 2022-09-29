@@ -3,7 +3,11 @@ import './footer.css'
 
 const Footer = () => {
   return (
-    <div>Footer</div>
+    <div>
+			package.json  - homepage - 도메인주소 <br />
+			npm run build 
+			
+		</div>
   )
 }
 
