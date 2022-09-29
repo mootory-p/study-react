@@ -58,19 +58,16 @@ const Contact = () => {
 			<h5>npm install swiper</h5>
 			<Swiper className='slider-wrap' 
 			// install Swiper modules
-      modules={[Navigation, Pagination, A11y]}
-      spaceBetween={12}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}>
+				modules={[Navigation, Pagination, A11y]}
+				spaceBetween={12}
+				slidesPerView={3}
+				navigation
+				pagination={{ clickable: true }}
+				onSwiper={(swiper) => console.log(swiper)}
+				onSlideChange={() => console.log('slide change')}>
 			{
 				dataimg.map( ( {id, title, img} ) => {
 					return (
-
-
 						<SwiperSlide className="img-card" key={id}>
 							<img src={ img }  />
 							<h5>{ title }</h5>

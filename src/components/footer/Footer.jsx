@@ -17,7 +17,7 @@ const Footer = () => {
 			<h2>styled-components</h2> 
 			npm install --save styled-components<br />
 			import styled from 'styled-components'<br />
-			<Button>Button</Button>
+			<Button> styled-components Button</Button>
 			</div>
 
 
@@ -31,7 +31,7 @@ const Footer = () => {
 
 const Button = styled.button`
 	background: var(--color-primary); padding:8px; border-radius: 6px; display: inline-block;
-	cursor: pointer;
+	cursor: pointer; margin:2rem auto;
 	&:active, &:focus { outline:none;}
 `;
 
