@@ -5,7 +5,7 @@ import { BsTwitter, BsGithub, BsArrowDown } from 'react-icons/bs';
 
 const Header = () => {
   return (
-    <header>
+    <header id='pagetop'>
       <div className="container header-container">
         <h5>Hello, This is h5</h5>
         <h2>This is h2</h2>

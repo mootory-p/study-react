@@ -4,7 +4,7 @@ import styled from 'styled-components'
 
 const Footer = () => {
   return (
-    <div className='container footer-container'>
+    <div className='container footer-container' id="footer">
 			<div className="build">
 				<h2>Build</h2>
 				<p>package.json  - homepage - 도메인주소 <br />

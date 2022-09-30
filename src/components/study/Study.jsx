@@ -16,7 +16,7 @@ const Study = () => {
 	}
 
   return (
-    <div className='study'>
+    <div className='study' id='study'>
        
 			<h2>{ post }</h2>
 			<h4 style = { {color:'tomato'} }> 스타일은 중괄호 안에 오브젝트 형식으로 </h4>

@@ -1,9 +1,10 @@
 
 .about-container  { display: grid; gap: 0.8rem; row-gap:2rem; grid-template-columns: repeat(3, 1fr);max-width: 1000px;
-margin:5rem auto;}
+margin:0 auto;padding:5rem 0}
 .about-container .article { text-align: center; background: var(--color-primary);padding:2rem; border-radius: 6px;}
 .about-container .article .icon { font-size: 2rem; margin-bottom: 3rem;}
-
+.about-container .btn { background:var(--color-secondary);}
+.about-container .btn.active { background: var(--color-primary); }
 @media screen and ( max-width: 1024px){
   .about-container { grid-template-columns: 1fr 1fr;}
 }
