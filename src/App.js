@@ -12,17 +12,17 @@ function App() {
 
   return (
     <div className='App'>
+      
+      
+      <BrowserRouter>
       <TopNav />
-      
-      {/* <BrowserRouter>
-      
       <Routes>
         <Route path="/" element={<Main />} />
-        <Route path="/page1/*" element={<Page1 />} />
-        <Route path="/page2/*" element={<Page2 />} />
-        <Route path="/*" element={<NotFound />} />
+        <Route path="/product" element={<Product />} />
+        <Route path="/information" element={<Information />} />
+        
       </Routes>
-    </BrowserRouter> */}
+    </BrowserRouter>
       
 
     </div>

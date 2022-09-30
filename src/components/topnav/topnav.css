@@ -1,0 +1,4 @@
+.topnav {  background-color:#000;}
+.topnav ul {display: flex; align-items: center; justify-content: center; padding: 20px;}
+.topnav li a { color:var(--color-light); padding: 5px 12px; font-size: 1rem;line-height: 135%; }
+.topnav li a.active, .topnav li a:hover { color: var(--color-primary); }
