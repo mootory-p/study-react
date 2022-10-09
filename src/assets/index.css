@@ -53,3 +53,8 @@ button { cursor: pointer;}
   .container { width: var(--container-w-sm);}
   section { margin-top:2rem;}
 }
+
+.infopage {
+	width: 1100px; margin: 50px auto;
+}
+.modal { margin: 20px; padding: 20px; text-align: left; background: #eee;color:#333;}
