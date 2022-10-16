@@ -13,6 +13,8 @@ const Information = () => {
 		글제목변경(copy);
 	}
 
+	let [title, setTitle] = useState(0);
+
 
   return (
     <div className='infopage'>
@@ -25,7 +27,9 @@ const Information = () => {
 				return (
 					<div key = {i}>
 					{/* <div className="h1">{ a }</div> */}
-					<div className="h1" onClick={()=>{	setmodal(!modal)	}}>{ 글제목[i] } 
+					{/* <div className="h1" onClick={()=>{	setmodal(!modal)	}}>{ 글제목[i] }  */}
+					<div className="h1" onClick={ ()=>{	setmodal(true);	setTitle(i) }} > {글제목[i]} 
+
 					<span onClick={()=> {
 						let copy =[...따봉];
 						copy[i] = 따봉[i]+1;
@@ -56,10 +60,13 @@ const Information = () => {
 			{
 				// 조건식 ? 참일때코드 : 거짓일때코드
 				// 1 == 1 ? '맞아' : '틀려'
-				modal == true ? <Modal color= { 'yellow'} 글제목 = {글제목} 글수정 = {글수정}/> : null
+				modal == true ? <Modal color= { 'yellow'} 글제목 = {글제목} 글수정 = {글수정} title={title} /> : null
 					
 				
 			}
+			<button onClick={()=>{ setTitle(0)}} style={ {width:'30px',height:'30px',display:'block'} }>0</button>
+			<button onClick={()=>{ setTitle(1)}} style={ {width:'30px',height:'30px',display:'block'} }>1</button>
+			<button onClick={()=>{ setTitle(2)}} style={ {width:'30px',height:'30px',display:'block'} }>2</button>
 			
 			
 
@@ -70,7 +77,7 @@ const Information = () => {
 function Modal (props){
 	return(
 		<div className="modal" style={{ background:props.color }}>
-			<h4>{props.글제목}</h4>
+			<h4>{props.글제목[props.title]}</h4>
 			<p>date </p>
 			<p>상세내용</p>
 			<button onClick={props.글수정}>글수정</button>
